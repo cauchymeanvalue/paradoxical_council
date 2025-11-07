@@ -55,6 +55,11 @@ plt.tight_layout()
 
 # --- основной цикл ---
 for t in range(steps):
+	result = st.empty()
+	if starts:
+		st.session_state.running = True
+		result.empty()
+		
     if not st.session_state.running:
         break
 
@@ -93,7 +98,7 @@ else:
 st.markdown("---")
 st.markdown("Simulation End State")
 st.metric(label="Final average opinion", value=f"{final:.2f}")
-st.info("Outcome: {result_text}")
+result.info(f"Outcome: {result_text}")
 
 st.info("Adjust parameters and press ▶️ Start to run simulation again.")
 
@@ -129,5 +134,6 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
