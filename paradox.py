@@ -80,6 +80,9 @@ for t in range(steps):
         status_placeholder.text("Debate in progress")
     time.sleep(0.05)
 
+plot_placeholder.pyplot(fig, clear_figure=False)
+time.sleep(0.1)
+
 final = np.mean(x)
 
 if final > 0.7:
@@ -128,6 +131,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
