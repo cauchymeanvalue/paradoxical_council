@@ -62,7 +62,7 @@ for t in range(steps):
 		
     if not st.session_state.running:
 		break
-
+		
     R = 1.0 if np.mean(x) < 0.5 else 0.0
     eps = np.random.uniform(-noise, noise, n)
     x = (1 - alpha) * x + alpha * (1 - R) + eps
@@ -134,6 +134,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
