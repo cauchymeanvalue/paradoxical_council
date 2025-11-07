@@ -53,12 +53,14 @@ ax2.set_title("Average YES fraction")
 ax2.set_xlabel("Step")
 plt.tight_layout()
 
-# --- основной цикл ---
-for t in range(steps):
-    result = st.empty()
-    if starts:
+result = st.empty()
+if start:
         st.session_state.running = True
         result.empty()
+
+# --- основной цикл ---
+for t in range(steps):
+    
     if not st.session_state.running:
         break
     R = 1.0 if np.mean(x) < 0.5 else 0.0
@@ -66,7 +68,7 @@ for t in range(steps):
     x = (1 - alpha) * x + alpha * (1 - R) + eps
     x = np.clip(x, 0, 1)
     matrix[t, :] = x
-	history.append(np.mean(x))
+    history.append(np.mean(x))
     im.set_data(matrix[:t+1, :])
     line.set_data(range(len(history)), history)
     plot_placeholder.pyplot(fig, clear_figure=False)
@@ -127,6 +129,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
