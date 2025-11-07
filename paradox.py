@@ -55,27 +55,21 @@ plt.tight_layout()
 
 # --- основной цикл ---
 for t in range(steps):
-	result = st.empty()
-	if starts:
-		st.session_state.running = True
-		result.empty()
-
-	if not st.session_state.running:
-		break
+    result = st.empty()
+    if starts:
+        st.session_state.running = True
+        result.empty()
+    if not st.session_state.running:
+        break
     R = 1.0 if np.mean(x) < 0.5 else 0.0
     eps = np.random.uniform(-noise, noise, n)
     x = (1 - alpha) * x + alpha * (1 - R) + eps
     x = np.clip(x, 0, 1)
-
     matrix[t, :] = x
-    history.append(np.mean(x))
-
-    
+	history.append(np.mean(x))
     im.set_data(matrix[:t+1, :])
     line.set_data(range(len(history)), history)
-
     plot_placeholder.pyplot(fig, clear_figure=False)
-
     mean_val = np.mean(x)
     if mean_val > 0.7:
         status_placeholder.info("Majority says YES")
@@ -133,6 +127,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
