@@ -117,7 +117,7 @@ The cycle rules are simple: the system calculates the average opinion, flips it 
 In essence, it’s both a model of social feedback — like Instagram, where popularity can undermine belief — and a purely logical philosophical paradox. It also illustrates how even rational groups can behave chaotically when hidden internal rules exist, and what happens when a circle of decision-makers collectively refuses to follow the majority — when everyone rejects at once.
 </p>
 <p>
-You may even see it as an illustration of what happens, when everyone believes he is the smartest and has great <i>critival thinking skills</i>.
+You may even see it as an illustration of what happens, when everyone believes he is the smartest and has great <i>critical thinking skills</i>.
 </p>
 <p>
 The parameters are straightforward: the number of participants and the number of voting rounds; noise,me aning the random mood swings; and alpha, which is simply the willingness to change one’s mind depending on the crowd — the higher it is, the more conformist the group; the lower, the more stubborn the members.
@@ -134,6 +134,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
