@@ -35,10 +35,10 @@ $$
 
 where
 
-- \( x_i(t) \in [0,1] \) - opinion of member \( i )\ at the time \( t )\;
-- \( \alpha \in [0,1] \) - conformity coefficient;
-- \( \R )\ - the result of the previous voting, truth value of the system;
-- \( \varepsilon_i(t) \sim U(-\text{noise}, \text{noise}) \) - random disturbances.
+ \( x_i(t) \in [0,1] \) - opinion of member \( i )\ at the time \( t )\;
+ \( \alpha \in [0,1] \) - conformity coefficient;
+ \( \R )\ - the result of the previous voting, truth value of the system;
+ \( \varepsilon_i(t) \sim U(-\text{noise}, \text{noise}) \) - random disturbances.
 
 ---
 
@@ -54,7 +54,11 @@ R =
 \end{cases}
 $$
 
-where \( \bar{x}(t) = \frac{1}{N}\sum_{i=1}^N x_i(t) \) is the average opinion.
+where 
+$
+\( \bar{x}(t) = \frac{1}{N}\sum_{i=1}^N x_i(t) \)
+$
+is the average opinion.
 
 Thus, when the majority believes “YES” (average \( >0.5 \)),  
 the system forces the next step toward “NO”, and vice versa.
