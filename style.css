@@ -14,7 +14,7 @@ hr {
 div.description {
   color: #000000;
   font-family: 'Times New Roman';
-  padding: 20px;
+  
 }
 
 div.stSlider > label {
@@ -26,3 +26,11 @@ div[data-testid="stMarkdownContainer"], div[data-testid="stText"], span, p {
   color: black !important;
 }
 
+h1, h2, h3, 
+div[data-testid="stMarkdownContainer"] h1,
+div[data-testid="stMarkdownContainer"] h2,
+div[data-testid="stMarkdownContainer"] h3,
+div[data-testid="stHeader"] h1 {
+  font-family: 'Times New Roman' !important;
+  font-color: black !important;
+}
