@@ -21,3 +21,8 @@ div.stSlider > label {
   color: black !important;
   font-weight: bold;
 } 
+
+div[data-testid="stMarkdownContainer"], div[data-testid="stText"], span, p {
+  color: black !important;
+}
+
