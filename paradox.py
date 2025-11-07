@@ -55,12 +55,11 @@ plt.tight_layout()
 
 result = st.empty()
 if start:
-        st.session_state.running = True
-        result.empty()
+    st.session_state.running = True
+    result.empty()
 
 # --- основной цикл ---
 for t in range(steps):
-    
     if not st.session_state.running:
         break
     R = 1.0 if np.mean(x) < 0.5 else 0.0
@@ -129,6 +128,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
