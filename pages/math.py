@@ -35,7 +35,7 @@ $$
 
 where
 
- \( x_i(t) \in [0,1] \) - opinion of member \( i )\ at the time \( t )\;
+ \( x_i(t) \in [0,1] \) - opinion of member \( i \) at the time \( t \);
  \( \alpha \in [0,1] \) - conformity coefficient;
  \( \R )\ - the result of the previous voting, truth value of the system;
  \( \varepsilon_i(t) \sim U(-\text{noise}, \text{noise}) \) - random disturbances.
@@ -95,8 +95,6 @@ $$
 """)
 
 st.page_link("paradox.py", label="⬅️ Back to simulation", icon="🏠")
-
-
 
 
 
