@@ -16,3 +16,8 @@ div.description {
   font-family: 'Times New Roman';
   padding: 20px;
 }
+
+div.stSlider > label {
+  color: black !important;
+  font-weight: bold;
+} 
