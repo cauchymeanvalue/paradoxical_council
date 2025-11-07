@@ -26,11 +26,32 @@ div[data-testid="stMarkdownContainer"], div[data-testid="stText"], span, p {
   color: black !important;
 }
 
-h1, h2, h3, p
+h1, h2, h3, p,
 div[data-testid="stMarkdownContainer"] h1,
 div[data-testid="stMarkdownContainer"] h2,
 div[data-testid="stMarkdownContainer"] h3,
 div[data-testid="stHeader"] h1 {
   font-family: 'Times New Roman' !important;
-  font-color: black !important;
+  color: black !important;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000022;
+    color: #ffffff;
+  }
+
+  h1, h2, h3 {
+    color: #ffffff !important;
+  }
+
+  div.stButton > button {
+    background-color: #66ccff;
+    color: #000;
+  }
+
+  div.stSlider > label {
+    color: #cccccc !important;
+  }
 }
