@@ -90,7 +90,7 @@ R =
 $$
 """)
 
-st.page_link("app.py", label="⬅️ Back to simulation", icon="🏠")
+st.page_link("paradox.py", label="⬅️ Back to simulation", icon="🏠")
 
 
 
