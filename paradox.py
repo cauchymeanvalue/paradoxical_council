@@ -13,10 +13,10 @@ with open("style.css") as f:
 st.title("Paradoxical Council Simulation")
 
 # --- параметры интерфейса ---
-n = st.slider("Number of members", 2, 50, 10)
+n = st.slider("Number of members", 1, 50, 10)
 alpha = st.slider("Readiness to change opinion (α)", 0.0, 1.0, 0.5, 0.01)
 noise = st.slider("Noise level", 0.0, 1.0, 0.1, 0.01)
-steps = st.slider("Simulation steps", 10, 500, 100)
+steps = st.slider("Simulation steps", 2, 100, 30)
 speed = st.slider("Animation speed (sec per step)", 0.01, 0.3, 0.05)
 
 col1, col2 = st.columns(2)
@@ -79,7 +79,7 @@ for t in range(steps):
         status_placeholder.info("Majority says NO")
     else:
         status_placeholder.text("Debate in progress")
-    time.sleep(0.01)
+    time.sleep(0.05)
 
 st.info("Adjust parameters and press ▶️ Start to run simulation again.")
 
@@ -101,6 +101,7 @@ Over time, the model can exhibit three main states: chaotic fluctuation, stabili
 </p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
