@@ -87,7 +87,7 @@ st.markdown("""
 ---
 <p>
 Each member has an opinion (0 - No, 1 - Yes). But the system is build strangely - an opinion is considered true only if the majority (>50%) disbelieves. <b>Alpha</b> controlls conformity, <b>noise</b> - chaotic elements.
-""" </p>, unsafe_allow_html=True)
+</p> """ , unsafe_allow_html=True)
 
 st.markdown("""
 ---
@@ -101,6 +101,7 @@ Over time, the model can exhibit three main states: chaotic fluctuation, stabili
 </p>
 </div>
 """, unsafe_allow_html=True)
+
 
 
 
