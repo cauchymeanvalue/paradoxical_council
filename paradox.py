@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import time
 
 # --- настройки страницы ---
-st.set_page_config(page_title="Paradoxical Council", layout="centered", page_icon="❓")
+st.set_page_config(page_title="Paradoxical Council Simukation", layout="centered", page_icon="❓")
 
 with open("style.css") as f:
 	st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
@@ -134,6 +134,7 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
 
 
 
