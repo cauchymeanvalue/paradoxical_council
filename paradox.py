@@ -96,12 +96,13 @@ st.markdown("""
 		   )
 st.markdown("""
 ---
-№ A new creation — a model-game (well, almost) that shows paradoxical decision-making: if the majority says “yes,” the system considers the correct answer to be “no.”
+# A new creation — a model-game (well, almost) that shows paradoxical decision-making: if the majority says “yes,” the system considers the correct answer to be “no.”
 The cycle rules are simple: the system calculates the average opinion, flips it (if most are “for,” it outputs “no”), makes everyone adjust their opinion accordingly, adds a bit of randomness to keep things lively, and shows the results of the votes in real time.
 In essence, it’s both a model of social feedback — like Instagram, where popularity can undermine belief — and a purely logical philosophical paradox. It also illustrates how even rational groups can behave chaotically when hidden internal rules exist, and what happens when a circle of decision-makers collectively refuses to follow the majority — when everyone rejects at once.
 The parameters are straightforward: the number of participants and the number of voting rounds; “noise,” meaning the random mood swings; and alpha, which is simply the willingness to change one’s mind depending on the crowd — the higher it is, the more conformist the group; the lower, the more stubborn the members.
 Over time, the model can exhibit three main states: chaotic fluctuation, stabilization in one direction, or oscillation between the two. 
 """
 		   )
+
 
 
