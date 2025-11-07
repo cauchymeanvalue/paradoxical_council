@@ -1,0 +1,18 @@
+
+body {background-color: #000066; color: #FFFFFF; font-family: 'Times New Roman'; }
+h1, h2, h3 {color: #FFFFFF;}
+p {
+  font-size: 16px;
+  color: #dddddd;
+  line-height: 1.6;
+}
+
+hr {
+  border: 1px solid #4444aa;
+}
+
+div.description {
+  color: #000000;
+  font-family: 'Times New Roman';
+  padding: 20px;
+}
