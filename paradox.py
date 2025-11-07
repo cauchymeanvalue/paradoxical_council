@@ -92,7 +92,7 @@ else:
 
 st.markdown("---")
 st.markdown("Simulation End State")
-st.markdown("Final average opinion", f"{final:.2f}")
+st.metrics(label="Final average opinion", value=f"{final:.2f}")
 st.info("Outcome: {result_text}")
 
 st.info("Adjust parameters and press ▶️ Start to run simulation again.")
@@ -129,3 +129,4 @@ To learn more about the math behind:
 """, unsafe_allow_html=True )
 
 st.page_link("pages/math.py", label="look...", icon="🐸") 
+
