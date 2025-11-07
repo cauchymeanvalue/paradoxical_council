@@ -4,13 +4,17 @@ import matplotlib.pyplot as plt
 import time
 
 st.markdown(
-	"""
-	### Model description: Each member has an opinion (0 - No, 1 - Yes). But the system is build strangely - an opinion is considered true only if the majority (<50%) disbelieves. Alpha controlls conformity, noise - chaotic elements. """
-
-	"""
-	<style>
-	body {background-color: #000066; color: #FFFFFF;}
-	h1 {color: #FFFFFF;}
+	"""	<style>
+	body {background-color: #000066; color: #FFFFFF; font-family: 'Times New Roman'; }
+	h1, h2, h3 {color: #FFFFFF;}
+	div.stButton > button {
+	    background-color: #66ccff;
+		color: black;
+		width: 100%;
+		}
+	div.stSlider > label {
+	   color: #cccccc;
+	   }
 	<\style>
 	""",
 	unsafe_allow_html=True
@@ -18,7 +22,11 @@ st.markdown(
 
 
 # --- настройки страницы ---
-st.set_page_config(page_title="Paradoxical Council", layout="centered")
+st.set_page_config(
+	page_title="Paradoxical Council", layout="centered",
+	page_icon="❓",
+	
+)
 st.title("Paradoxical Council Simulation")
 
 # --- параметры интерфейса ---
@@ -87,4 +95,20 @@ for t in range(steps):
     plot_placeholder.pyplot(fig)
     time.sleep(speed)
 
+
 st.info("Adjust parameters and press ▶️ Start to run simulation again.")
+
+st.markdown("""
+---
+### Each member has an opinion (0 - No, 1 - Yes). But the system is build strangely - an opinion is considered true only if the majority (>50%) disbelieves. Alpha controlls conformity, noise - chaotic elements.
+""" 
+		   )
+st.markdown("""
+---
+<h4> A new creation — a model-game (well, almost) that shows paradoxical decision-making: if the majority says “yes,” the system considers the correct answer to be “no.”
+The cycle rules are simple: the system calculates the average opinion, flips it (if most are “for,” it outputs “no”), makes everyone adjust their opinion accordingly, adds a bit of randomness to keep things lively, and shows the results of the votes in real time.
+In essence, it’s both a model of social feedback — like Instagram, where popularity can undermine belief — and a purely logical philosophical paradox. It also illustrates how even rational groups can behave chaotically when hidden internal rules exist, and what happens when a circle of decision-makers collectively refuses to follow the majority — when everyone rejects at once.
+The parameters are straightforward: the number of participants and the number of voting rounds; “noise,” meaning the random mood swings; and alpha, which is simply the willingness to change one’s mind depending on the crowd — the higher it is, the more conformist the group; the lower, the more stubborn the members.
+Over time, the model can exhibit three main states: chaotic fluctuation, stabilization in one direction, or oscillation between the two. </h4>
+"""
+		   )
