@@ -23,14 +23,14 @@ Let's start.
 </div>
 """, unsafe_allow_html=True )
 
-st.markdown("""
+st.markdown(r"""
 ---
 ### 1. Opinion update rule
 
-Each member \( i )\ updates their opinion at every time step \( t )\ according to:
+Each member \( i \) updates their opinion at every time step \( t \) according to:
 
 $$
-x_i(t+1) = (1 - \alpha)x_i(t) + \alpha(1-R) + varepsilon_i(t)
+x_i(t+1) = (1 - \alpha)x_i(t) + \alpha(1-R) + \varepsilon_i(t)
 $$
 
 where
@@ -49,7 +49,7 @@ The system's truth value \( R \) inverts the majority’s view:
 $$
 R =
 \begin{cases}
-1, & \text{if } \bar{x}(t) < 0.5, \\
+1, & \text{if } \bar{x}(t) < 0.5, 
 0, & \text{if } \bar{x}(t) \ge 0.5,
 \end{cases}
 $$
