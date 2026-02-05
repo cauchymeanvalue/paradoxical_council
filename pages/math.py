@@ -123,12 +123,21 @@ chaotic behavior.
 """, unsafe_allow_html=True)
 
 st.markdown("""
+
+<div class="description">
    <h3> 
    The Lyapunov exponent measures sensitivity to initial conditions:
    </h3>
 
    <p>
-   
+   The Lyapunov exponent in itself shows how fast do two very, <i>very</i> close trajectories diverge. Here is it:
+   </p>
+
+   <p>
+   {\displaystyle |{\boldsymbol {\delta }}(t)|\approx e^{\lambda t}|{\boldsymbol {\delta }}_{0}|}
+   </p>
+   <p>
+   I'm sure doesn't look like anything that makes sence to you. That's ok. 
    </p>
    
    <p>
@@ -136,8 +145,10 @@ st.markdown("""
     - λ = 0: Periodic or quasi-periodic behavior
     - λ < 0: Stable convergence
    </p>
-    
+    <p>
     For this system, λ depends critically on α and noise.
-    """)
+    </p>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.page_link("paradox.py", label="⬅️ Back to simulation", icon="🏠")
