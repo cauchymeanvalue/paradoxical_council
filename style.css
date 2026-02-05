@@ -1,9 +1,5 @@
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: #000022;
-    color: #ffffff;
-  }
-
+  
   h1, h2, h3 {
     color: #ffffff !important;
   }
@@ -56,4 +52,5 @@ div[data-testid="stHeader"] h1 {
   color: black !important;
 
 }
+
 
