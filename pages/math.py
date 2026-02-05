@@ -36,10 +36,10 @@ $$
 
 where  
 
-\( x_i(t) \in [0,1] \) — opinion of member \( i \) at time \( t \);  
-\( \alpha \in [0,1] \) — conformity coefficient;  
-\( R \) — result of the previous voting (truth value of the system);  
-\( \varepsilon_i(t) \sim U(-\text{noise}, \text{noise}) \) — random disturbances.
+st.write(r"$x_i(t) \in [0,1]$ — opinion of member $i$ at time $t$;")
+st.write(r"$\alpha \in [0,1]$ — conformity coefficient;")
+st.write(r"$R$ — result of the previous voting (truth value of the system);")
+st.write(r"$\varepsilon_i(t) \sim U(-\text{noise}, \text{noise})$ — random disturbances.")
 
 ---
 
