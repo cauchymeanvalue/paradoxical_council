@@ -34,15 +34,21 @@ $$
 x_i(t+1) = (1 - \alpha)x_i(t) + \alpha(1-R) + \varepsilon_i(t)
 $$
 
-where  """)
+where:
+
+""")
 
 st.write(r"$x_i(t) \in [0,1]$ — opinion of member $i$ at time $t$;")
+
 st.write(r"$\alpha \in [0,1]$ — conformity coefficient;")
+
 st.write(r"$R$ — result of the previous voting (truth value of the system);")
+
 st.write(r"$\varepsilon_i(t) \sim U(-\text{noise}, \text{noise})$ — random disturbances.")
 
 
 st.markdown("---")
+
 st.markdown(r"""
 
 ### 2. Paradoxical feedback
@@ -97,5 +103,21 @@ R =
 \end{cases}
 $$
 """)
+
+st.markdown("""
+<div class="intro-box">
+<h3 style="color: white; margin-top: 0;">🔬 Mathematical Insights</h3>
+<p>
+This system is a <b>nonlinear map</b> with a discontinuous feedback function. 
+The discontinuity at $\\bar{x} = 0.5$ creates a <b>bifurcation</b> that can lead 
+to complex dynamics including limit cycles and chaos.
+</p>
+<p>
+The interplay between deterministic feedback (the paradox) and stochastic noise 
+($\\varepsilon$) determines whether the system converges, oscillates, or exhibits 
+chaotic behavior.
+</p>
+</div>
+""", unsafe_allow_html=True)
 
 st.page_link("paradox.py", label="⬅️ Back to simulation", icon="🏠")
