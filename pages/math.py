@@ -34,14 +34,16 @@ $$
 x_i(t+1) = (1 - \alpha)x_i(t) + \alpha(1-R) + \varepsilon_i(t)
 $$
 
-where  
+where  """)
 
 st.write(r"$x_i(t) \in [0,1]$ — opinion of member $i$ at time $t$;")
 st.write(r"$\alpha \in [0,1]$ — conformity coefficient;")
 st.write(r"$R$ — result of the previous voting (truth value of the system);")
 st.write(r"$\varepsilon_i(t) \sim U(-\text{noise}, \text{noise})$ — random disturbances.")
 
----
+
+st.markdown("---")
+st.markdown(r"""
 
 ### 2. Paradoxical feedback
 
