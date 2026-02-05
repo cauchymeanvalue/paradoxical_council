@@ -35,6 +35,7 @@ x_i(t+1) = (1 - \alpha)x_i(t) + \alpha(1-R) + \varepsilon_i(t)
 $$
 
 where:
+</p>
 
 """)
 
@@ -50,6 +51,8 @@ st.write(r"$\varepsilon_i(t) \sim U(-\text{noise}, \text{noise})$ — random dis
 st.markdown("---")
 
 st.markdown(r"""
+
+
 
 ### 2. Paradoxical feedback
 
@@ -105,8 +108,7 @@ $$
 """)
 
 st.markdown("""
-<div class="intro-box">
-<h3 style="color: white; margin-top: 0;">🔬 Mathematical Insights</h3>
+
 <p>
 This system is a <b>nonlinear map</b> with a discontinuous feedback function. 
 The discontinuity at $\\bar{x} = 0.5$ creates a <b>bifurcation</b> that can lead 
@@ -119,5 +121,23 @@ chaotic behavior.
 </p>
 </div>
 """, unsafe_allow_html=True)
+
+st.markdown("""
+   <h3> 
+   The Lyapunov exponent measures sensitivity to initial conditions:
+   </h3>
+
+   <p>
+   
+   </p>
+   
+   <p>
+    - λ > 0: Chaotic regime (exponential divergence)
+    - λ = 0: Periodic or quasi-periodic behavior
+    - λ < 0: Stable convergence
+   </p>
+    
+    For this system, λ depends critically on α and noise.
+    """)
 
 st.page_link("paradox.py", label="⬅️ Back to simulation", icon="🏠")
