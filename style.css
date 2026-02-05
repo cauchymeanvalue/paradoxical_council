@@ -1,9 +1,9 @@
-
+@media (prefers-color-sceme: light) {
 body {background-color: white; font-family: 'Times New Roman'; }
-h1, h2, h3, p {color: black !important; font-family: 'Times New Roman';}
+h1, h2, h3, p {color: black; font-family: 'Times New Roman';}
 p {
   font-size: 25px;
-  color: black !important;
+  color: black;
   line-height: 1.6;
 }
 
@@ -18,7 +18,7 @@ div.description {
 }
 
 div.stSlider > label {
-  color: black !important;
+  color: black;
   font-weight: bold;
 } 
 
@@ -34,6 +34,7 @@ div[data-testid="stHeader"] h1 {
   font-family: 'Times New Roman' !important;
   color: black !important;
 
+}
 }
 
 
@@ -56,6 +57,7 @@ div[data-testid="stHeader"] h1 {
     color: #cccccc !important;
   }
 }
+
 
 
 
